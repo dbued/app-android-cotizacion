@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="seed">#5B5FC7</color>
+
+    <color name="md_theme_primary">#5B5FC7</color>
+    <color name="md_theme_onPrimary">#FFFFFF</color>
+    <color name="md_theme_primaryContainer">#E0DEFF</color>
+    <color name="md_theme_onPrimaryContainer">#1705A6</color>
+
+    <color name="md_theme_secondary">#5C5D72</color>
+    <color name="md_theme_onSecondary">#FFFFFF</color>
+    <color name="md_theme_secondaryContainer">#E1E0F9</color>
+    <color name="md_theme_onSecondaryContainer">#191A2C</color>
+
+    <color name="md_theme_surface">#FFFBFF</color>
+    <color name="md_theme_onSurface">#1C1B1F</color>
+    <color name="md_theme_surfaceVariant">#E5E1EC</color>
+    <color name="md_theme_onSurfaceVariant">#47464F</color>
+
+    <color name="md_theme_background">#FEF7FF</color>
+    <color name="md_theme_onBackground">#1C1B1F</color>
+
+    <color name="md_theme_error">#BA1A1A</color>
+    <color name="md_theme_onError">#FFFFFF</color>
+
+    <color name="md_theme_outline">#787680</color>
+    <color name="md_theme_outlineVariant">#C8C5D0</color>
+
+    <color name="price_color">#1B5E20</color>
+    <color name="date_color">#616161</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

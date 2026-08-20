@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/QuotationListFragment">
+
+    <fragment
+        android:id="@+id/QuotationListFragment"
+        android:name="com.example.radiomodern.ui.list.QuotationListFragment"
+        android:label="@string/list_title"
+        tools:layout="@layout/fragment_quotation_list">
+
+        <action
+            android:id="@+id/action_list_to_add"
+            app:destination="@id/AddQuotationFragment" />
+
+        <action
+            android:id="@+id/action_list_to_detail"
+            app:destination="@id/QuotationDetailFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/AddQuotationFragment"
+        android:name="com.example.radiomodern.ui.add.AddQuotationFragment"
+        android:label="@string/add_title"
+        tools:layout="@layout/fragment_add_quotation">
+
+        <argument
+            android:name="quotationId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/QuotationDetailFragment"
+        android:name="com.example.radiomodern.ui.detail.QuotationDetailFragment"
+        android:label="@string/detail_title"
+        tools:layout="@layout/fragment_quotation_detail">
+
+        <argument
+            android:name="quotationId"
+            app:argType="long" />
+
+        <action
+            android:id="@+id/action_detail_to_edit"
+            app:destination="@id/AddQuotationFragment">
+            <argument
+                android:name="quotationId"
+                app:argType="long" />
+        </action>
+
+    </fragment>
+
+</navigation>

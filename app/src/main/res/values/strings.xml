@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cotizaciones</string>
+    <string name="action_export_csv">Exportar CSV</string>
+    <string name="action_export_excel">Exportar Excel</string>
+    <string name="action_share">Compartir</string>
+
+    <string name="list_title">Mis Cotizaciones</string>
+    <string name="list_empty">No hay cotizaciones</string>
+    <string name="list_empty_subtitle">Toca \"+\" para crear tu primera cotización</string>
+
+    <string name="add_title">Nueva Cotización</string>
+    <string name="edit_title">Editar Cotización</string>
+    <string name="field_price">Precio</string>
+    <string name="field_description">Descripción</string>
+    <string name="field_price_hint">0.00</string>
+    <string name="field_description_hint">Describe el producto o servicio…</string>
+    <string name="btn_take_photo">Tomar Foto</string>
+    <string name="btn_save">Guardar</string>
+    <string name="btn_update">Actualizar</string>
+
+    <string name="detail_title">Detalle</string>
+    <string name="detail_price_label">Precio</string>
+    <string name="detail_description_label">Descripción</string>
+    <string name="detail_date_label">Fecha y Hora</string>
+
+    <string name="btn_edit">Editar</string>
+    <string name="btn_delete">Eliminar</string>
+    <string name="btn_share">Compartir</string>
+
+    <string name="dialog_delete_title">Eliminar cotización</string>
+    <string name="dialog_delete_message">¿Estás seguro de que deseas eliminar esta cotización?</string>
+    <string name="dialog_cancel">Cancelar</string>
+    <string name="dialog_confirm_delete">Eliminar</string>
+
+    <string name="snackbar_saved">Cotización guardada</string>
+    <string name="snackbar_updated">Cotización actualizada</string>
+    <string name="snackbar_deleted">Cotización eliminada</string>
+    <string name="snackbar_undo">Deshacer</string>
+    <string name="snackbar_exported_csv">CSV exportado a Descargas</string>
+    <string name="snackbar_exported_excel">Excel exportado a Descargas</string>
+    <string name="snackbar_no_data">No hay datos para exportar</string>
+
+    <string name="error_price_required">El precio es requerido</string>
+    <string name="error_price_invalid">Precio inválido</string>
+    <string name="error_description_required">La descripción es requerida</string>
+
+    <string name="camera_permission_required">Se requiere permiso de cámara para tomar fotos</string>
+
+    <string name="currency_format">$%,.2f</string>
+</resources>

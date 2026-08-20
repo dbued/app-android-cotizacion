@@ -1,0 +1,48 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Documento base -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,20 L62,20 L78,36 L78,88 L30,88 Z" />
+
+    <!-- Pliegue del documento -->
+    <path
+        android:fillColor="#E8E8FF"
+        android:pathData="M62,20 L62,36 L78,36 Z" />
+
+    <!-- Signo de dólar grande -->
+    <path
+        android:fillColor="#5B5FC7"
+        android:pathData="M48,38 C48,35.5 51.5,34 55,33.5 C58.5,33 61,33.5 61,35.5 C61,37.5 58,38.5 55,39 C52,39.5 48,40.5 48,43.5 C48,47.5 53,49 57,49 L57,52 L47,52 L47,55 L58,55 C64,55 66,52 66,48.5 C66,44.5 61,43 57,42 C53,41 47,40 47,36.5 C47,32.5 52,31 56,30.5 C60,30 64,30.5 64,33 L64,33" />
+
+    <!-- Línea superior -->
+    <path
+        android:fillColor="#C8C5D0"
+        android:pathData="M35,58 L73,58"
+        android:strokeWidth="1.5"
+        android:strokeColor="#C8C5D0" />
+
+    <!-- Línea media 1 -->
+    <path
+        android:fillColor="#C8C5D0"
+        android:pathData="M35,65 L65,65"
+        android:strokeWidth="1.5"
+        android:strokeColor="#C8C5D0" />
+
+    <!-- Línea media 2 -->
+    <path
+        android:fillColor="#C8C5D0"
+        android:pathData="M35,72 L60,72"
+        android:strokeWidth="1.5"
+        android:strokeColor="#C8C5D0" />
+
+    <!-- Punto final -->
+    <path
+        android:fillColor="#5B5FC7"
+        android:pathData="M35,79, A2,2 0 1,1 39.01,79 A2,2 0 1,1 35,79 Z" />
+
+</vector>
