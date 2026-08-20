@@ -3,7 +3,20 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
+
+    <!-- Base oscura -->
     <path
-        android:fillColor="#E8E6FF"
-        android:pathData="M0,0h108v108h-108z" />
+        android:fillColor="#120830"
+        android:pathData="M0,0 L108,0 L108,108 L0,108 Z" />
+
+    <!-- Gradiente medio -->
+    <path
+        android:fillColor="#1B0A3C"
+        android:pathData="M0,50 Q54,20 108,55 L108,108 L0,108 Z" />
+
+    <!-- Gradiente claro -->
+    <path
+        android:fillColor="#2E1570"
+        android:pathData="M0,75 Q54,50 108,78 L108,108 L0,108 Z" />
+
 </vector>

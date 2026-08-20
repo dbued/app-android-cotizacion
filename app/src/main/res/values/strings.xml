@@ -48,4 +48,22 @@
     <string name="camera_permission_required">Se requiere permiso de cámara para tomar fotos</string>
 
     <string name="currency_format">$%,.2f</string>
+
+    <string name="nav_principal">Principal</string>
+    <string name="nav_ajustes">Ajustes</string>
+
+    <string name="settings_title">Ajustes</string>
+    <string name="settings_appearance">Apariencia</string>
+    <string name="settings_dark_mode">Modo oscuro</string>
+    <string name="settings_dark_mode_desc">Activa el tema oscuro de la aplicación</string>
+    <string name="settings_export">Exportar datos</string>
+    <string name="settings_export_excel">Exportar a Excel</string>
+    <string name="settings_export_excel_desc">Genera un archivo .xls con todas tus cotizaciones</string>
+    <string name="settings_export_csv">Exportar a CSV</string>
+    <string name="settings_export_csv_desc">Genera un archivo .csv con todas tus cotizaciones</string>
+    <string name="settings_about">Acerca de</string>
+    <string name="settings_app_name">Cotizaciones</string>
+    <string name="settings_version">Versión 1.0</string>
+    <string name="settings_developer">Desarrollado por Edgar</string>
+    <string name="settings_description">Gestiona y comparte tus cotizaciones de forma sencilla</string>
 </resources>

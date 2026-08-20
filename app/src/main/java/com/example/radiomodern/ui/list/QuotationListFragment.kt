@@ -36,27 +36,9 @@ class QuotationListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setupToolbar()
         setupRecyclerView()
         setupFab()
         observeQuotations()
-    }
-
-    private fun setupToolbar() {
-        binding.toolbar.inflateMenu(R.menu.menu_main)
-        binding.toolbar.setOnMenuItemClickListener { menuItem ->
-            when (menuItem.itemId) {
-                R.id.action_export_csv -> {
-                    exportCsv()
-                    true
-                }
-                R.id.action_export_excel -> {
-                    exportExcel()
-                    true
-                }
-                else -> false
-            }
-        }
     }
 
     private fun setupRecyclerView() {
@@ -120,42 +102,6 @@ class QuotationListFragment : Fragment() {
                 Snackbar.make(binding.root, R.string.snackbar_deleted, Snackbar.LENGTH_SHORT).show()
             }
             .show()
-    }
-
-    private fun exportCsv() {
-        val quotations = viewModel.allQuotations.value
-        if (quotations.isEmpty()) {
-            Snackbar.make(binding.root, R.string.snackbar_no_data, Snackbar.LENGTH_SHORT).show()
-            return
-        }
-        val uri = com.example.radiomodern.util.CsvExporter.exportToCsv(requireContext(), quotations)
-        if (uri != null) {
-            val shareIntent = android.content.Intent(android.content.Intent.ACTION_SEND).apply {
-                type = "text/csv"
-                putExtra(android.content.Intent.EXTRA_STREAM, uri)
-                addFlags(android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION)
-            }
-            startActivity(android.content.Intent.createChooser(shareIntent, "Compartir CSV"))
-            Snackbar.make(binding.root, R.string.snackbar_exported_csv, Snackbar.LENGTH_SHORT).show()
-        }
-    }
-
-    private fun exportExcel() {
-        val quotations = viewModel.allQuotations.value
-        if (quotations.isEmpty()) {
-            Snackbar.make(binding.root, R.string.snackbar_no_data, Snackbar.LENGTH_SHORT).show()
-            return
-        }
-        val uri = com.example.radiomodern.util.ExcelExporter.exportToExcel(requireContext(), quotations)
-        if (uri != null) {
-            val shareIntent = android.content.Intent(android.content.Intent.ACTION_SEND).apply {
-                type = "application/vnd.ms-excel"
-                putExtra(android.content.Intent.EXTRA_STREAM, uri)
-                addFlags(android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION)
-            }
-            startActivity(android.content.Intent.createChooser(shareIntent, "Compartir Excel"))
-            Snackbar.make(binding.root, R.string.snackbar_exported_excel, Snackbar.LENGTH_SHORT).show()
-        }
     }
 
     override fun onDestroyView() {

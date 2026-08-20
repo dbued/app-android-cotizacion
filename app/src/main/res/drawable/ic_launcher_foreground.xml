@@ -4,45 +4,85 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
 
+    <!-- Gradiente base oscuro -->
+    <path
+        android:fillColor="#1B0A3C"
+        android:pathData="M0,0 L108,0 L108,108 L0,108 Z" />
+
+    <!-- Gradiente capa media -->
+    <path
+        android:fillColor="#2E1570"
+        android:pathData="M0,40 Q54,10 108,50 L108,108 L0,108 Z" />
+
+    <!-- Gradiente capa clara -->
+    <path
+        android:fillColor="#4A25A0"
+        android:pathData="M0,65 Q54,40 108,70 L108,108 L0,108 Z" />
+
+    <!-- Brillo sutil arriba -->
+    <path
+        android:fillColor="#6C3FD4"
+        android:fillAlpha="0.2"
+        android:pathData="M30,0 Q54,25 78,0 L78,30 Q54,55 30,30 Z" />
+
     <!-- Documento base -->
     <path
         android:fillColor="#FFFFFF"
-        android:pathData="M30,20 L62,20 L78,36 L78,88 L30,88 Z" />
+        android:pathData="M32,18 L58,18 L76,36 L76,90 L32,90 Z" />
 
-    <!-- Pliegue del documento -->
+    <!-- Sombra del documento -->
     <path
-        android:fillColor="#E8E8FF"
-        android:pathData="M62,20 L62,36 L78,36 Z" />
+        android:fillColor="#D4CFFA"
+        android:fillAlpha="0.3"
+        android:pathData="M34,20 L58,20 L75,37 L75,89 L34,89 Z" />
 
-    <!-- Signo de dólar grande -->
+    <!-- Pliegue -->
     <path
-        android:fillColor="#5B5FC7"
-        android:pathData="M48,38 C48,35.5 51.5,34 55,33.5 C58.5,33 61,33.5 61,35.5 C61,37.5 58,38.5 55,39 C52,39.5 48,40.5 48,43.5 C48,47.5 53,49 57,49 L57,52 L47,52 L47,55 L58,55 C64,55 66,52 66,48.5 C66,44.5 61,43 57,42 C53,41 47,40 47,36.5 C47,32.5 52,31 56,30.5 C60,30 64,30.5 64,33 L64,33" />
+        android:fillColor="#C0B8F0"
+        android:pathData="M58,18 L58,36 L76,36 Z" />
 
-    <!-- Línea superior -->
+    <!-- Linea de pliegue -->
     <path
-        android:fillColor="#C8C5D0"
-        android:pathData="M35,58 L73,58"
-        android:strokeWidth="1.5"
-        android:strokeColor="#C8C5D0" />
+        android:pathData="M58,18 L76,36"
+        android:strokeWidth="0.5"
+        android:strokeColor="#8070C0" />
 
-    <!-- Línea media 1 -->
+    <!-- Lineas de texto decorativas -->
     <path
-        android:fillColor="#C8C5D0"
-        android:pathData="M35,65 L65,65"
-        android:strokeWidth="1.5"
-        android:strokeColor="#C8C5D0" />
+        android:pathData="M38,56 L68,56"
+        android:strokeWidth="2"
+        android:strokeColor="#C8C0E8"
+        android:strokeLineCap="round" />
 
-    <!-- Línea media 2 -->
     <path
-        android:fillColor="#C8C5D0"
-        android:pathData="M35,72 L60,72"
-        android:strokeWidth="1.5"
-        android:strokeColor="#C8C5D0" />
+        android:pathData="M38,64 L60,64"
+        android:strokeWidth="2"
+        android:strokeColor="#C8C0E8"
+        android:strokeLineCap="round" />
 
-    <!-- Punto final -->
     <path
-        android:fillColor="#5B5FC7"
-        android:pathData="M35,79, A2,2 0 1,1 39.01,79 A2,2 0 1,1 35,79 Z" />
+        android:pathData="M38,72 L52,72"
+        android:strokeWidth="2"
+        android:strokeColor="#C8C0E8"
+        android:strokeLineCap="round" />
+
+    <!-- Circulo del check -->
+    <path
+        android:fillColor="#22C55E"
+        android:pathData="M54,34 A14,14 0 1,1 54.01,34 Z" />
+
+    <!-- Sombra interna del circulo -->
+    <path
+        android:fillColor="#16A34A"
+        android:fillAlpha="0.3"
+        android:pathData="M54,36 A12,12 0 1,1 54.01,36 Z" />
+
+    <!-- Check mark -->
+    <path
+        android:pathData="M47,34 L52,39 L61,29"
+        android:strokeWidth="3"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
 
 </vector>
